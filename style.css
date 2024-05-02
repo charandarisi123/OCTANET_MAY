@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}/*https://cc-prod.scene7.com/is/image/CCProdAuthor/Mountain-photography_P3b_690x450?$pjpeg$&jpegSize=200&wid=690 */
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2019/07/23090714/nature-1024x682.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+.top .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+.text h1{
+    font-weight: 600;
+    font-size: 50px;
+}
+.text .image{
+    background-image: url(https://arts.mojarto.com/productImages/MA279947/primary/MA279947.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+}
+.rtext{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtext p{
+    font-size: 25px;
+}
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+.b1{
+    width: 30%;
+    background-image: url(https://5.imimg.com/data5/SELLER/Default/2023/3/XP/SL/YM/103578143/3d-nature-wallpaper-500x500.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: inherit;
+}
+.b1 h1{
+    text-align: center;
+    padding: 30px
+}
+.b1 p{
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.b1 .overlay{
+    position: relative;
+    height: auto;
+    background-color:rgba(255, 255, 255, 0) ;
+}
+.b2{
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/038/979/546/small_2x/ai-generated-sunset-over-the-tranquil-pond-reflects-the-beauty-generated-by-ai-photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up h1{
+    text-align: center;
+    padding: 30px;
+}
+.b2 .up p{
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.b2 .up .overlay{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color:rgba(255, 255, 255, 0.059) ;
+}
+.b2 .down{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .down .overlay{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgba(255, 255, 255, 0.137);
+}
+ .b3{/*https://media.istockphoto.com/id/1752211309/photo/digital-search-icon-hologram-on-future-tech-background-search-engine-evolution-futuristic.webp?b=1&s=170667a&w=0&k=20&c=YctmmhP3mxUbI4pWEfSK5ET6H2YxmvnnWYN2xVGWd3U= */
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/036/366/644/small_2x/ai-generated-spring-background-for-the-presentation-of-your-product-photo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    margin-right: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 1vh 9vh;
+}
+.b3 .overlay p{
+    padding: 1.2vh;
+}
+.b3 p{
+    color: rgb(5, 5, 5)
+}
+
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left: initial;
+    }
+}
+
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text .image{
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext .p{
+        margin-top: 10px;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2 .up{
+        min-height: 30vh;
+    }
+    .b2 .down{
+        min-height: 30vh;
+    }
+    .b3{
+        width: 100%;
+        background-position: left;
+        min-height: 30vh;
+    }
+}
